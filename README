@@ -1,0 +1,20 @@
+TEMA2 - PC
+Stroinea Ioana, 325CC
+.....................
+
+Pentru implementarea ATM-ului este nevoie de un protocol TCP deoarece
+acesta este orientat-conexiune, in acest mod contul clientului fiind
+pastrat in siguranta. Este nevoie sa ne asiguram ca retragerea
+numerarului, de exemplu, nu se face inaintea logarii astfel incat o alta
+persoana sa poata extrage bani dintr-un cont strain. Deci TCP asigura
+sosirea mesajelor in ordine. 
+Pentru citirea din fisier mi-am creat un vector de structuri in care am
+retinut toate datele unui utilizator. Apoi, printr-o serie de "if-uri"
+am verificat comenzile primite de la client si validitatea acestora.
+Pentru o sesiune curenta am creat un alt vector in care am retinut numarul
+de card si socket-ul pe care trimite un client. La intiere acestea sunt 0,
+iar la delogare le resetez la valorile initiale. In client, am de asemenea
+niste verificari care imi permit sa vad daca un client este sau nu logat,
+deci in consecinta, daca poate sau nu sa trimita solicitari server-ului.
+
+Am lucrat pe scheletul din laboratorul 8, cel cu multiplexare.
