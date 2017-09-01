@@ -1,0 +1,5 @@
+verilog work "Rez.v"
+verilog work "clk2.v"
+verilog work "auto.v"
+verilog work "afisaj.v"
+verilog work "top.v"

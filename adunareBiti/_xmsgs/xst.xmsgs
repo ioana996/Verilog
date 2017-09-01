@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2323" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">33</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">39</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">39</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">40</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">40</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">40</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">aduna.v</arg>&quot; line <arg fmt="%d" index="2">40</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+</messages>
+

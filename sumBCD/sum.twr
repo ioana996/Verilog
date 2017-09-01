@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml sum.twx sum.ncd -o sum.twr sum.pcf
+
+Design file:              sum.ncd
+Physical constraint file: sum.pcf
+Device,package,speed:     xc3s400,ft256,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+carry          |out<0>         |    8.166|
+carry          |out<1>         |    9.559|
+carry          |out<2>         |    9.870|
+carry          |out<3>         |   10.180|
+carry          |out<4>         |    9.555|
+carry          |out<5>         |    9.719|
+x<0>           |out<0>         |    7.713|
+x<0>           |out<1>         |    9.645|
+x<0>           |out<2>         |    9.956|
+x<0>           |out<3>         |   10.266|
+x<0>           |out<4>         |    9.641|
+x<0>           |out<5>         |    9.805|
+x<1>           |out<1>         |    9.737|
+x<1>           |out<2>         |   10.048|
+x<1>           |out<3>         |   10.358|
+x<1>           |out<4>         |    9.733|
+x<1>           |out<5>         |    9.897|
+x<2>           |out<1>         |    9.671|
+x<2>           |out<2>         |    9.982|
+x<2>           |out<3>         |   10.292|
+x<2>           |out<4>         |    9.667|
+x<2>           |out<5>         |    9.951|
+x<3>           |out<1>         |    8.739|
+x<3>           |out<2>         |    9.221|
+x<3>           |out<3>         |    9.465|
+x<3>           |out<4>         |    8.734|
+x<3>           |out<5>         |    9.404|
+y<0>           |out<0>         |    7.272|
+y<0>           |out<1>         |    9.204|
+y<0>           |out<2>         |    9.515|
+y<0>           |out<3>         |    9.825|
+y<0>           |out<4>         |    9.200|
+y<0>           |out<5>         |    9.364|
+y<1>           |out<1>         |    9.374|
+y<1>           |out<2>         |    9.685|
+y<1>           |out<3>         |    9.995|
+y<1>           |out<4>         |    9.370|
+y<1>           |out<5>         |    9.534|
+y<2>           |out<1>         |    9.050|
+y<2>           |out<2>         |    9.361|
+y<2>           |out<3>         |    9.671|
+y<2>           |out<4>         |    9.046|
+y<2>           |out<5>         |    9.330|
+y<3>           |out<1>         |    8.592|
+y<3>           |out<2>         |    9.074|
+y<3>           |out<3>         |    9.318|
+y<3>           |out<4>         |    8.587|
+y<3>           |out<5>         |    9.257|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Mar 31 19:22:36 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 101 MB
+
+
+

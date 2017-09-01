@@ -1,0 +1,336 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: aduna.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "aduna.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "aduna"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-ft256
+
+---- Source Options
+Top Module Name                    : aduna
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "aduna.v" in library work
+Module <aduna> compiled
+No errors in compilation
+Analysis of file <"aduna.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <aduna> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <aduna>.
+WARNING:Xst:2323 - "aduna.v" line 33: Parameter 2 is not constant in call of system task $display.
+"aduna.v" line 33: $display : %b
+Module <aduna> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <aduna>.
+    Related source file is "aduna.v".
+WARNING:Xst:643 - "aduna.v" line 39: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "aduna.v" line 39: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "aduna.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "aduna.v" line 40: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "aduna.v" line 40: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "aduna.v" line 40: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "aduna.v" line 40: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit adder for signal <c4>.
+    Found 1-bit adder for signal <s>.
+    Found 1-bit adder for signal <c1>.
+    Found 1-bit adder for signal <c2>.
+    Found 1-bit adder for signal <c2$addsub0000> created at line 38.
+    Found 1x1-bit multiplier for signal <c2$mult0001> created at line 38.
+    Found 1-bit adder for signal <c3>.
+    Found 1-bit adder for signal <c3$addsub0000> created at line 39.
+    Found 1-bit adder for signal <c3$addsub0001> created at line 39.
+    Found 1x1-bit multiplier for signal <c3$mult0000> created at line 39.
+    Found 1x1-bit multiplier for signal <c3$mult0001> created at line 39.
+    Found 1-bit adder for signal <c4$addsub0000> created at line 40.
+    Found 1-bit adder for signal <c4$addsub0001> created at line 40.
+    Found 1-bit adder for signal <c4$addsub0002> created at line 40.
+    Found 1x1-bit multiplier for signal <c4$mult0000> created at line 40.
+    Found 1x1-bit multiplier for signal <c4$mult0001> created at line 40.
+    Found 1x1-bit multiplier for signal <c4$mult0002> created at line 40.
+    Found 1x1-bit multiplier for signal <c4$mult0003> created at line 40.
+    Found 1-bit adder for signal <s_0$addsub0000> created at line 42.
+    Found 1-bit adder for signal <s_1$addsub0000> created at line 43.
+    Found 1-bit adder for signal <s_2$addsub0000> created at line 44.
+    Found 1-bit adder for signal <s_3$addsub0000> created at line 45.
+    Summary:
+	inferred  18 Adder/Subtractor(s).
+	inferred   7 Multiplier(s).
+Unit <aduna> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 7
+ 1x1-bit multiplier                                    : 7
+# Adders/Subtractors                                   : 18
+ 1-bit adder                                           : 18
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 7
+ 1x1-bit multiplier                                    : 7
+# Adders/Subtractors                                   : 11
+ 1-bit adder                                           : 4
+ 1-bit adder carry in                                  : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <aduna> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block aduna, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : aduna.ngr
+Top Level Output File Name         : aduna
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 23
+#      LUT2                        : 1
+#      LUT3                        : 5
+#      LUT4                        : 10
+#      MUXF5                       : 5
+#      MUXF6                       : 2
+# IO Buffers                       : 14
+#      IBUF                        : 9
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400ft256-5 
+
+ Number of Slices:                        8  out of   3584     0%  
+ Number of 4 input LUTs:                 16  out of   7168     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    173     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 11.216ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 111 / 5
+-------------------------------------------------------------------------
+Delay:               11.216ns (Levels of Logic = 7)
+  Source:            x<0> (PAD)
+  Destination:       c4 (PAD)
+
+  Data Path: x<0> to c4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   1.040  x_0_IBUF (x_0_IBUF)
+     LUT3:I0->O            5   0.479   0.842  c441 (c4_bdd9)
+     LUT3:I2->O            8   0.479   0.980  c481 (c4_bdd15)
+     LUT4:I2->O            1   0.479   0.000  s<3>3 (s<3>3)
+     MUXF5:I1->O           1   0.314   0.000  s<3>_f5_0 (s<3>_f51)
+     MUXF6:I0->O           1   0.298   0.681  s<3>_f6 (s_3_OBUF)
+     OBUF:I->O                 4.909          s_3_OBUF (s<3>)
+    ----------------------------------------
+    Total                     11.216ns (7.673ns logic, 3.543ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.76 secs
+ 
+--> 
+
+Total memory usage is 197836 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

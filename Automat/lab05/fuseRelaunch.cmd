@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/teme_vineri/lab05/lab05/afisaj_isim_beh.exe" -prj "D:/teme_vineri/lab05/lab05/afisaj_beh.prj" "work.afisaj" "work.glbl" 

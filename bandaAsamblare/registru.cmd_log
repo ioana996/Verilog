@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/student/bandaAsamblare/registru.xst" -ofn "C:/Users/student/bandaAsamblare/registru.syr" 

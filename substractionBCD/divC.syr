@@ -1,0 +1,379 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: divC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "divC.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "divC"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : divC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\student\subs\divC.v" into library work
+Parsing module <divC>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <divC>.
+WARNING:HDLCompiler:413 - "C:\Users\student\subs\divC.v" Line 27: Result of 26-bit expression is truncated to fit in 25-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <divC>.
+    Related source file is "C:\Users\student\subs\divC.v".
+    Found 1-bit register for signal <clkout>.
+    Found 25-bit register for signal <aux>.
+    Found 25-bit adder for signal <aux[24]_GND_1_o_add_1_OUT> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+Unit <divC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 25-bit adder                                          : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 25-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <divC>.
+The following registers are absorbed into counter <aux>: 1 register on signal <aux>.
+Unit <divC> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 25-bit adder                                          : 1
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <aux_13> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_14> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_15> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_16> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_17> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_18> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_19> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_20> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_21> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_22> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_23> of sequential type is unconnected in block <divC>.
+WARNING:Xst:2677 - Node <aux_24> of sequential type is unconnected in block <divC>.
+
+Optimizing unit <divC> ...
+INFO:Xst:2261 - The FF/Latch <clkout> in Unit <divC> is equivalent to the following FF/Latch, which will be removed : <aux_12> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block divC, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : divC.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 63
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 23
+#      MUXCY                       : 23
+#      VCC                         : 1
+#      XORCY                       : 13
+# FlipFlops/Latches                : 13
+#      FD                          : 13
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              13  out of  126800     0%  
+ Number of Slice LUTs:                   25  out of  63400     0%  
+    Number used as Logic:                25  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     25
+   Number with an unused Flip Flop:      12  out of     25    48%  
+   Number with an unused LUT:             0  out of     25     0%  
+   Number of fully used LUT-FF pairs:    13  out of     25    52%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   2  out of    210     0%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clkin                              | BUFGP                  | 13    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.742ns (Maximum Frequency: 574.218MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 0.645ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkin'
+  Clock period: 1.742ns (frequency: 574.218MHz)
+  Total number of paths / destination ports: 91 / 13
+-------------------------------------------------------------------------
+Delay:               1.742ns (Levels of Logic = 14)
+  Source:            aux_0 (FF)
+  Destination:       clkout (FF)
+  Source Clock:      clkin rising
+  Destination Clock: clkin rising
+
+  Data Path: aux_0 to clkout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.283  aux_0 (aux_0)
+     INV:I->O              1   0.113   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_lut<0>_INV_0 (Madd_aux[24]_GND_1_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<0> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<1> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<2> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<3> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<4> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<5> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<6> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<7> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<8> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<9> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<10> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           0   0.023   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_cy<11> (Madd_aux[24]_GND_1_o_add_1_OUT_cy<11>)
+     XORCY:CI->O           1   0.370   0.000  Madd_aux[24]_GND_1_o_add_1_OUT_xor<12> (aux[24]_GND_1_o_add_1_OUT<12>)
+     FD:D                      0.008          clkout
+    ----------------------------------------
+    Total                      1.742ns (1.458ns logic, 0.283ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkin'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.645ns (Levels of Logic = 1)
+  Source:            clkout (FF)
+  Destination:       clkout (PAD)
+  Source Clock:      clkin rising
+
+  Data Path: clkout to clkout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.283  clkout (aux<12>)
+     OBUF:I->O                 0.000          clkout_OBUF (clkout)
+    ----------------------------------------
+    Total                      0.645ns (0.361ns logic, 0.283ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clkin
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkin          |    1.742|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.59 secs
+ 
+--> 
+
+Total memory usage is 230276 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

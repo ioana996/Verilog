@@ -1,0 +1,22 @@
+NET "clk" LOC = A8;
+
+NET "An[0]" LOC = G14;
+NET "An[1]" LOC = G12;
+NET "An[2]" LOC = G13;
+NET "An[3]" LOC = F12;
+
+NET "b1" LOC = N15;
+NET "b2" LOC = J16;
+NET "b3" LOC = K16;
+NET "eb1" LOC = M13;
+NET "eb2" LOC = N14;
+NET "ebs" LOC = P14;
+
+
+NET "Cout[1]" LOC = G16;
+NET "Cout[2]" LOC = E14;
+NET "Cout[3]" LOC = J14;
+NET "Cout[4]" LOC = H13;
+NET "Cout[5]" LOC = G15;
+NET "Cout[6]" LOC = E13;
+NET "Cout[7]" LOC = F13;

@@ -1,0 +1,3 @@
+verilog work "registru.v"
+verilog work "bloc.v"
+verilog work "final.v"

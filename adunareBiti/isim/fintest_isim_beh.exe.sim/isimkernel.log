@@ -1,0 +1,28 @@
+Command line:
+   fintest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49428
+
+Fri May 05 19:11:34 2017
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 693.436 Meg
+
+ Total Signals          : 63
+ Total Nets             : 110
+ Total Signal Drivers   : 48
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 54
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 223
+
+ Total Simulation Time: 0.109201 sec
+
+ Current Memory Usage: 1008.01 Meg
+
+Fri May 05 19:12:12 2017
+
